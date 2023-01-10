@@ -28,5 +28,7 @@ if ($result) {
     echo "Het record is verwijderd";
     header('Refresh:2.5; url=read.php');
 } else {
-    echo "Het record is niet verwijderd";
+    echo " Het record is niet verwijderd";
 }
+
+?>
