@@ -23,4 +23,24 @@ $sql = "SELECT Id,
                 Prijs 
         FROM DureAutos";
 
+$statement = $pdo->prepare($sql);
+$statement->execute();
+$result = $statement->fetchAll(PDO::FETCH_OBJ);
+
+$tableRows = "";
+
+foreach($result as $info) {
+    $tableRows .= "<tr>
+                        <td>$info->Merk</td>
+                        <td>$info->Model</td>
+                        <td>$info->Topsnelheid</td>
+                        <td>$info->Prijs</td>
+                        <td>
+                            <a href='delete.php?Id=$info->Id'>
+                                <img src='vids/b_drop.png' alt='cross'
+                            </a>
+                            </td>
+                    </tr>";
+}
+
 ?>
