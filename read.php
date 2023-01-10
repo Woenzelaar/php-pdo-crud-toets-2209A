@@ -21,7 +21,7 @@ $sql = "SELECT Id,
                 Model, 
                 Topsnelheid,
                 Prijs 
-        FROM DureAutos";
+        FROM DureAuto";
 
 $statement = $pdo->prepare($sql);
 $statement->execute();
@@ -53,10 +53,10 @@ foreach($result as $info) {
         <th>Model</th>
         <th>Topsnelheid</th>
         <th>Prijs</th>
-        <th></th>
+        <th>Delete</th>
     </thead>
     <tbody>
-        <?php echo $tableRows; ?>
+        <?php echo $tableRows;?>
     </tbody>
 </table> 
 

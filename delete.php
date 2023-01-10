@@ -1,5 +1,5 @@
 <?php
-    echo 'Het meegestuurde ID = ' . $_GET['ID'];
+    echo 'Het meegestuurde Id = ' . $_GET['Id'];
 
 require('config.php');
 
