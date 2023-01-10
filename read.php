@@ -16,6 +16,11 @@ try {
     echo $e->getMessage();
 }
 
-
+$sql = "SELECT Id, 
+                Merk, 
+                Model, 
+                Topsnelheid,
+                Prijs 
+        FROM DureAutos";
 
 ?>
