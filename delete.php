@@ -15,7 +15,7 @@ try {
     $e->getMessage();
 }
 
-$sql = "DELETE FROM DureAutos
+$sql = "DELETE FROM DureAuto
         WHERE Id = :Id;";
 
 $statement = $pdo->prepare($sql);
