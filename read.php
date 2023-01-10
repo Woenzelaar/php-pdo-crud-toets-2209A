@@ -37,10 +37,26 @@ foreach($result as $info) {
                         <td>$info->Prijs</td>
                         <td>
                             <a href='delete.php?Id=$info->Id'>
-                                <img src='vids/b_drop.png' alt='cross'
+                                <img src='./vids/b_drop.png' alt='cross'
                             </a>
                             </td>
                     </tr>";
 }
 
 ?>
+
+<h3>De vijf duurste auto's ter wereld</h3>
+<br><br>
+<table border='1'>
+    <thead>
+        <th>Merk</th>
+        <th>Model</th>
+        <th>Topsnelheid</th>
+        <th>Prijs</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <?php echo $tableRows; ?>
+    </tbody>
+</table> 
+
